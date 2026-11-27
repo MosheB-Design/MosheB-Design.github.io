@@ -41,7 +41,7 @@ a { color: inherit; }
 /* sections */
 .sec { font-size: 32px; margin: 0 0 32px; padding-top: 16px; border-top: 2px solid var(--ink); display: inline-block; }
 .projects { padding: 56px 0; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 28px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 28px; }
 .card { text-decoration: none; display: block; }
 .card.feat { grid-column: 1 / -1; }
 .card.feat .thumb { aspect-ratio: 21 / 9; }
@@ -50,8 +50,12 @@ a { color: inherit; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
 .thumb.cut img { object-fit: contain; padding: 18px; }
 .card:hover .thumb img { transform: scale(1.03); }
-.meta { padding-top: 10px; }
-.card { padding-bottom: 22px; border-bottom: 2px solid var(--ink); }
+.card { background: var(--panel); box-shadow: 0 1px 0 rgba(46,40,37,.08); transition: box-shadow .25s; }
+.card:hover { box-shadow: 0 6px 24px rgba(46,40,37,.18); }
+.meta { padding: 14px 18px 20px; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: baseline; }
+.meta .num { grid-row: 1 / 3; }
+.meta h3 { margin: 0 0 2px; }
+.thumb.cut { background: #DED6D1; }
 .meta .num { font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; color: var(--ochre); line-height: 1; }
 .meta h3 { font-size: 21px; margin: 6px 0 2px; }
 .meta p { margin: 0; font-size: 15px; color: #5a504a; }
@@ -85,7 +89,7 @@ a { color: inherit; }
   .wrap { padding: 0 20px; }
   .intro .wrap, .about .wrap { grid-template-columns: 1fr; gap: 32px; }
   .intro { padding-top: 40px; }
-  .grid { grid-template-columns: 1fr 1fr; gap: 40px 16px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
   .cv { grid-template-columns: 1fr; }
   .top nav a { margin-inline-start: 16px; font-size: 15px; }
   .brand span { display: none; }
@@ -93,7 +97,7 @@ a { color: inherit; }
 @media (max-width: 520px) {
   .pn { flex-direction: column; align-items: center; gap: 12px; text-align: center; }
   .card.feat .thumb { aspect-ratio: 4 / 3; }
-  .grid { grid-template-columns: 1fr; gap: 44px; }
+  .grid { grid-template-columns: 1fr; gap: 32px; }
   .site-foot .wrap { flex-direction: column; gap: 6px; }
 }
 .intro h1.latin, .meta h3.latin { text-align: right; }
