@@ -49,7 +49,10 @@
 @media (max-width: 760px) {
   .slide { display: none; }
   .slide-m { display: block; }
-  .part.main .stage .cap { font-size: 40px; }
+  .slide-m .part { width: auto; margin: 20px 16px 8px; }
+  .slide-m { padding-bottom: 12px; }
+  .part.main .stage .cap { font-size: 40px; line-height: 1.35; }
+
   .ph { padding: 28px 0 20px; }
   .ph .wrap { gap: 16px; padding-bottom: 16px; }
   .ph p { font-size: 15px; }
@@ -66,7 +69,7 @@
 .ph p { margin: 0; color: #5A421C; font-weight: 500; font-size: 18px; }
 
 /* phone: panel text in normal flow */
-.flow { background: #D1C7C1; padding: 24px 20px 20px; display: flex; flex-direction: column; gap: 4px; }
+.flow { background: #D1C7C1; padding: 28px 20px 26px; display: flex; flex-direction: column; gap: 4px; }
 .flow p { margin: 0; text-align: right; }
 .flow .lab { font-size: 14px; font-weight: 700; color: #5A421C; margin-top: 12px; }
 .flow .lab:first-child { margin-top: 0; }
@@ -77,5 +80,8 @@
 .flow .cap { font-size: 14px; color: #4A423D; }
 .flow .callout { font-size: 16px; border-right: 4px solid #7E5F2C; padding-right: 12px; }
 .flow .stepn { font-size: 14px; font-weight: 700; color: #5A421C; }
-.flow img { display: block; margin: 10px auto 6px; }
+.flow img { display: block; margin: 20px auto 12px; }
+.facts-m { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; margin-top: 18px; }
+.facts-m .kv { gap: 2px !important; margin: 0 !important; padding-bottom: 10px; border-bottom: 1px solid #B3A69E; }
+.facts-m .small { font-size: 15px; }
 .flow div { gap: 12px !important; margin-top: 6px; }
