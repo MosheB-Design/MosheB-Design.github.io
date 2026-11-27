@@ -1,0 +1,55 @@
+.stage { font-family: 'Heebo', Arial, sans-serif; color: #2E2825; }
+.stage-bg { background: #C1B4AC; padding: 128px; }
+.stage p { margin: 0; }
+.stage .pf { font-family: 'Instrument Serif', Georgia, serif; font-size: 160px; line-height: 1; color: #2E2825; }
+.stage .hname { font-size: 170px; font-weight: 700; line-height: 1.1; text-align: right; color: #2E2825; }
+.stage .htitle { font-size: 56px; text-align: right; color: #2E2825; }
+.stage .abody { font-size: 32px; line-height: 1.6; text-align: right; color: #2E2825; }
+.stage .kick { font-family: 'Work Sans', Arial, sans-serif; font-size: 24px; letter-spacing: 8px; color: #4A423D; }
+.stage .name { font-family: 'Instrument Serif', Georgia, serif; font-size: 230px; line-height: 0.9; color: #2E2825; }
+.stage .cv1 { font-size: 36px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .cv2 { font-size: 28px; text-align: right; color: #2E2825; }
+.stage .contact { font-family: 'Work Sans', Arial, sans-serif; font-size: 36px; color: #2E2825; }
+.stage .h { font-size: 64px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .h2 { font-size: 44px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .body { font-size: 26px; line-height: 1.6; text-align: right; color: #2E2825; }
+.stage .lab { font-size: 24px; font-weight: 700; text-align: right; color: #5A421C; }
+.stage .lead { font-size: 36px; font-weight: 700; line-height: 1.4; text-align: right; color: #2E2825; }
+.stage .val { font-size: 30px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .sub { font-size: 28px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .small { font-size: 26px; line-height: 1.5; text-align: right; color: #4A423D; }
+.stage .cap { font-size: 26px; text-align: right; color: #4A423D; }
+.stage .callout { font-size: 28px; line-height: 1.45; text-align: right; color: #2E2825; border-right: 6px solid #7E5F2C; padding-right: 20px; box-sizing: border-box; }
+.stage .num { font-family: 'Instrument Serif', Georgia, serif; font-size: 96px; line-height: 1; text-align: right; color: #6E5226; }
+.stage .ttl { font-size: 44px; font-weight: 700; line-height: 1.15; text-align: right; color: #2E2825; }
+.stage .crs { font-size: 28px; text-align: right; color: #4A423D; }
+.stage .foot { font-family: 'Work Sans', Arial, sans-serif; font-size: 24px; letter-spacing: 6px; color: #6F6560; }
+.stage .stepn { font-size: 24px; font-weight: 700; text-align: center; color: #5A421C; }
+.stage .stept { font-size: 28px; font-weight: 700; text-align: center; color: #2E2825; }
+.stage .stepb { font-size: 24px; line-height: 1.4; text-align: center; color: #4A423D; }
+.stage .icol { flex: 1; display: flex; flex-direction: column; }
+.stage .irow { display: flex; justify-content: flex-end; align-items: flex-start; gap: 28px; padding: 15px 0; border-bottom: 2px solid #B3A69E; }
+.stage .itext { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.stage .ititle { font-size: 38px; font-weight: 700; text-align: right; color: #2E2825; }
+.stage .icourse { font-size: 28px; text-align: right; color: #4A423D; }
+.stage .inum { font-family: 'Instrument Serif', Georgia, serif; font-size: 64px; line-height: 1; width: 90px; text-align: right; color: #6E5226; }
+.stage .ccol { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.stage .crule { border-top: 2px solid #9E9088; margin: 0 0 8px 0; }
+.stage .kv { display: flex; flex-direction: column; gap: 6px; padding-bottom: 16px; border-bottom: 2px solid #B3A69E; }
+
+/* slide canvas, scaled to the page width by a small script */
+.deck { padding: 0 0 8px; }
+.sl { margin: 0 auto 28px; max-width: 1600px; }
+.slide, .part { position: relative; width: 100%; overflow: hidden; background: #C1B4AC; }
+.slide { aspect-ratio: 16 / 9; }
+.stage { position: absolute; top: 0; left: 0; height: 1080px; transform-origin: 0 0; direction: ltr; font-family: 'Heebo', Arial, sans-serif; color: #2E2825; }
+.stage img { max-width: none; display: block; }
+.stage p { margin: 0; }
+.slide-m { display: none; }
+@media (max-width: 760px) {
+  .slide { display: none; }
+  .slide-m { display: block; }
+  .part.main .stage .cap { font-size: 40px; }
+  .part.main .stage .callout { font-size: 36px; }
+  .sl { margin-bottom: 20px; }
+}
