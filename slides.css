@@ -53,3 +53,25 @@
   .part.main .stage .callout { font-size: 36px; }
   .sl { margin-bottom: 20px; }
 }
+
+/* page header, once per project */
+.ph { padding: 40px 0 28px; }
+.ph .num { font-family: 'Instrument Serif', Georgia, serif; font-size: 40px; color: #6E5226; line-height: 1; }
+.ph h1 { font-size: clamp(34px, 4.6vw, 56px); line-height: 1.1; margin: 6px 0 4px; }
+.ph h1.latin { text-align: right; }
+.ph p { margin: 0; color: #5A421C; font-weight: 500; }
+
+/* phone: panel text in normal flow */
+.flow { background: #D1C7C1; padding: 24px 20px 20px; display: flex; flex-direction: column; gap: 4px; }
+.flow p { margin: 0; text-align: right; }
+.flow .lab { font-size: 14px; font-weight: 700; color: #5A421C; margin-top: 12px; }
+.flow .lab:first-child { margin-top: 0; }
+.flow .lead { font-size: 20px; font-weight: 700; line-height: 1.4; }
+.flow .body, .flow .small { font-size: 16px; line-height: 1.6; }
+.flow .small { color: #4A423D; }
+.flow .val, .flow .sub { font-size: 17px; font-weight: 700; }
+.flow .cap { font-size: 14px; color: #4A423D; }
+.flow .callout { font-size: 16px; border-right: 4px solid #7E5F2C; padding-right: 12px; }
+.flow .stepn { font-size: 14px; font-weight: 700; color: #5A421C; }
+.flow img { display: block; margin: 10px auto 6px; }
+.flow div { gap: 12px !important; margin-top: 6px; }
