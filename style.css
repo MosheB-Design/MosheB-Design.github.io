@@ -28,17 +28,15 @@ a { color: inherit; }
 .top nav a:hover { color: var(--ochre); }
 
 /* intro */
-.intro { padding: 72px 0 40px; }
-.intro .wrap { display: grid; grid-template-columns: 7fr 4fr; gap: 48px; align-items: center; }
+.intro { padding: 64px 0 8px; }
+.intro .wrap { display: block; }
+.intro-txt { padding-bottom: 8px; }
 .intro-kick { font-size: 13px; letter-spacing: .18em; color: var(--ochre); margin: 0 0 18px; }
 .intro h1 { font-size: clamp(48px, 7vw, 88px); line-height: 1; margin: 0; font-weight: 700; }
 .role { font-size: 28px; margin: 14px 0 4px; }
-.school { margin: 0 0 32px; color: #5a504a; }
+.school { margin: 0 0 8px; color: #5a504a; }
 .btn { display: inline-block; background: var(--ink); color: var(--bg); text-decoration: none; padding: 12px 28px; font-weight: 500; }
 .btn:hover { background: var(--ochre); }
-.intro-img { position: relative; display: block; text-decoration: none; }
-.intro-img img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; max-height: 640px; }
-.intro-img span { position: absolute; bottom: 0; right: 0; background: var(--gold); padding: 6px 14px; font-size: 14px; font-weight: 500; }
 
 /* sections */
 .sec { font-size: 32px; margin: 0 0 32px; padding-top: 16px; border-top: 2px solid var(--ink); display: inline-block; }
