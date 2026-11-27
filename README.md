@@ -1,1 +1,3 @@
-# MosheB-Design.github.io
+# Moshe Bariach – Industrial Design Portfolio
+
+https://mosheb-design.github.io
